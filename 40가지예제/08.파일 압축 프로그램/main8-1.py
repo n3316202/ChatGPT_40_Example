@@ -5,4 +5,5 @@ def compress_file(file_path):
         zip_file.write(file_path)
 
 if __name__ == '__main__':
-    compress_file('08.파일 압축 프로그램\압축.txt')
+    #compress_file('08.파일 압축 프로그램\압축.txt')
+    compress_file('압축.txt')
