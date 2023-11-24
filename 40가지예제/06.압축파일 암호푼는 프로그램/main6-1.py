@@ -42,5 +42,27 @@ def crack_zip_password(zipfilename, digits=True, letters=True, max_length=9):
     # 비밀번호를 찾지 못한 경우 None을 반환합니다.
     return None
 
-password = crack_zip_password(r"06.압축파일 암호푼는 프로그램\암호.zip", digits=True, letters=True, max_length=9)
+#password = crack_zip_password(r"06.압축파일 암호푼는 프로그램\\암호.zip", digits=True, letters=True, max_length=9)
+password = crack_zip_password(r"암호.zip", digits=True, letters=True, max_length=9)
 print("비밀번호는:",password)
+
+# class Test:
+#     def __init__(self):
+#         print('초기화')
+#
+#     def __enter__(self):
+#         print("with문 들어왔습니다")
+#
+#     def __exit__(self, exc_type, exc_val, exc_tb):
+#         print("with문 종료되었습니다.")
+#
+# with Test() as f:
+#     print("with문 안 입니다.")
+#
+#
+# [결과]:
+# 초기화
+# with문 들어왔습니다
+# with문 안 입니다.
+# with문 종료되었습니다.
+# 출처: https://aplab.tistory.com/entry/파이썬-with-사용법 [테리엇의 A Python Lab:티스토리]

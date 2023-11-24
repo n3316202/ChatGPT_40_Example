@@ -8,5 +8,6 @@ data = "Hello, World!"
 img = qrcode.make(data)
 
 # 이미지 파일로 저장
-file_path = os.path.join("04.QR코드 생성기", "qrcode.png")
+file_path = os.path.join("04.QR 코드 생성기", "qrcode.png")
+print(file_path)
 img.save(file_path)
