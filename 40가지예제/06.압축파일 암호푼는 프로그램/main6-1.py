@@ -27,6 +27,10 @@ def crack_zip_password(zipfilename, digits=True, letters=True, max_length=9):
     passwords = itertools.chain.from_iterable(
         itertools.product(chars, repeat=i) for i in range(1, max_length + 1)
     )
+    #https: // soundprovider.tistory.com / entry / python - itertools
+    # A = [1, 2, 3]
+    # list(itertools.product(A, repeat=2))
+    # >> >> [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]
 
     # 비밀번호를 하나씩 시도합니다.
     with zipfile.ZipFile(zipfilename) as zf:
