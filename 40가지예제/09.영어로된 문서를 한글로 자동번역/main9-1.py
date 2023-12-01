@@ -1,9 +1,12 @@
 from googletrans import Translator
 
 # 번역할 파일 경로
-input_file_path = "09.영어로된 문서를 한글로 자동번역\영어문서.txt"
+#input_file_path = "09.영어로된 문서를 한글로 자동번역\영어문서.txt"
+input_file_path = "영어문서.txt"
+
 # 번역된 파일 저장 경로
-output_file_path = "09.영어로된 문서를 한글로 자동번역\한글번역.txt"
+#output_file_path = "09.영어로된 문서를 한글로 자동번역\한글번역.txt"
+output_file_path = "한글번역.txt"
 
 # 번역기 생성
 translator = Translator()

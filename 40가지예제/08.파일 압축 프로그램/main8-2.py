@@ -5,6 +5,14 @@ def compress_file_with_password(file_path, password):
     with open(file_path, 'rb') as f:
         data = f.read()
     # create a new zip file with the given name
+
+    # compress_type: 압축
+    # 포맷
+    # 형식.ZIP_DEFLATED
+    # 가
+    # 일반적으로
+    # 쓰인다.
+
     with pyzipper.AESZipFile(file_path + '.zip', 'w', compression=pyzipper.ZIP_DEFLATED, encryption=pyzipper.WZ_AES) as zip_file:
         # set password for the zip file
         zip_file.setpassword(password.encode('utf-8'))
@@ -13,4 +21,5 @@ def compress_file_with_password(file_path, password):
 
 if __name__ == '__main__':
     # specify the file path and password
-    compress_file_with_password('08.파일 압축 프로그램\압축.txt', '1234')
+    #compress_file_with_password('08.파일 압축 프로그램\압축.txt', '1234')
+    compress_file_with_password('압축.txt', '1234')
