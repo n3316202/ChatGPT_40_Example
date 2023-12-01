@@ -19,4 +19,5 @@ for i in range(1000):
     ws.append([name, gender, email, phone_number])
 
 # 엑셀 파일 저장
-wb.save('12.가짜 개인정보를 만들어 엑셀에 저장하기/개인정보.xlsx')
+#wb.save('12.가짜 개인정보를 만들어 엑셀에 저장하기/개인정보.xlsx')
+wb.save('개인정보.xlsx')

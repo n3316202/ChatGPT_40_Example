@@ -27,4 +27,5 @@ print(emails)
 
 # 이메일을 엑셀 파일로 저장
 df = pd.DataFrame(emails, columns=["Email"])
-df.to_excel("10.이메일을 수집하여 엑셀에 기록하기/이메일.xlsx", index=False)
+#df.to_excel("10.이메일을 수집하여 엑셀에 기록하기/이메일.xlsx", index=False)
+df.to_excel("이메일.xlsx", index=False)
