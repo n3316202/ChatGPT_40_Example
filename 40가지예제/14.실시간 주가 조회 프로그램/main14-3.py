@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import tkinter as tk
 
+#디폴트 매개변수
+#https://wikidocs.net/85321
+
 def get_stock_price():
     code = code_entry.get()
     url = f'https://finance.naver.com/item/main.nhn?code={code}'
