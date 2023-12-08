@@ -7,4 +7,5 @@ sentences = ["안녕하세요", "반갑습니다", "오늘은 날씨가 좋네�
 for i, sentence in enumerate(sentences):
     tts = gTTS(text=sentence, lang='ko')
     filename = str(i+1) + "번 " + sentence + ".mp3"
-    tts.save('18.음악 재생 프로그램\\' + filename)
+    #tts.save('18.음악 재생 프로그램\\' + filename)
+    tts.save(filename)
