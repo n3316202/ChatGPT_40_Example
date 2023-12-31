@@ -10,6 +10,11 @@ print(response.text)
 soup = BeautifulSoup(response.text, "html.parser")  # BeautifulSoup 객체 생성
 emails = []
 
+
+#https://velog.io/@cha-suyeon/%EC%A0%95%EA%B7%9C-%ED%91%9C%ED%98%84%EC%8B%9D-%EB%A9%94%ED%83%80-%EB%AC%B8%EC%9E%90-A-Z-b-B
+#\b
+#\b는 단어 구분자(Word Boundary)입니다. 보통 단어는 whitespace에 의해 구분됩니다.
+
 #https://s205203.tistory.com/29
 # 이메일 패턴
 email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'

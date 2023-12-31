@@ -21,3 +21,13 @@ result = translator.translate(text, dest="ko")
 # 번역된 결과를 파일에 쓰기
 with open(output_file_path, "w", encoding="utf-8") as output_file:
     output_file.write(result.text)
+
+#https://blog.naver.com/wideeyed/221653260516
+
+# 아래와 같이 파일을 읽고, 종료하는 전통적인 코드를
+# f = open('myFile.txt', 'w', encoding='utf8')
+# f.write("test")
+# f.close()
+# 아래와 같이 파일을 읽고, 종료하는 전통적인 코드를
+# with open('mytextfile.txt', 'r', encoding='utf8') as f:
+#   f.wirte("test")
